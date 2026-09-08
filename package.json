@@ -1,0 +1,33 @@
+{
+  "name": "tokendashboard-plugin-copilot",
+  "version": "0.2.0",
+  "description": "GitHub Copilot CLI hook to track token usage per model",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuland/tokendashboard-plugin-copilot.git"
+  },
+  "bin": {
+    "tokendashboard-plugin-copilot": "./updater.js"
+  },
+  "files": [
+    "updater.js",
+    "hook.js",
+    "statusline.js"
+  ],
+  "pluginFiles": [
+    "hook.js",
+    "statusline.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "unregister": "node updater.js uninstall",
+    "lint": "eslint hook.js updater.js statusline.js test",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "eslint": "^10.5.0"
+  }
+}
