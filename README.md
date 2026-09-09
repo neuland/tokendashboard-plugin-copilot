@@ -13,7 +13,7 @@ GitHub Copilot CLI hook plugin that captures token usage per model and forwards 
 ## Install
 
 ```bash
-npx git+https://github.com/neuland/tokendashboard-plugin-copilot.git install --api-base-url https://example.com --repo-raw-base-url https://raw.githubusercontent.com/neuland/tokendashboard-plugin-copilot/main
+npx --allow-git=all git+https://github.com/neuland/tokendashboard-plugin-copilot.git install --api-base-url https://example.com --repo-raw-base-url https://raw.githubusercontent.com/neuland/tokendashboard-plugin-copilot/main
 ```
 
 Both flags are required on every install/reinstall — neither has a built-in default:
@@ -28,7 +28,7 @@ Neither value is read back from a previous `config.json` — pass both again on 
 ## Uninstall
 
 ```bash
-npx git+https://github.com/neuland/tokendashboard-plugin-copilot.git uninstall
+npx --allow-git=all git+https://github.com/neuland/tokendashboard-plugin-copilot.git uninstall
 ```
 
 ## How it works
