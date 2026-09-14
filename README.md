@@ -2,6 +2,16 @@
 
 GitHub Copilot CLI hook plugin that captures token usage per model and forwards it to an internal HTTP endpoint.
 
+Part of a system that measures a company's token usage.
+It requires the backend, the frontend and at least one plugin that sends the data.  
+The backend can be found here:  
+https://github.com/neuland/tokendashboard-backend  
+the frontend here:  
+https://github.com/neuland/tokendashboard-frontend  
+and the other plugins here:  
+Claude: https://github.com/neuland/tokendashboard-plugin-claude
+OpenCode: https://github.com/neuland/tokendashboard-plugin-opencode
+
 ## Features
 
 - Captures input/output, cache and reasoning tokens per session and model from Copilot's `session.shutdown` event
